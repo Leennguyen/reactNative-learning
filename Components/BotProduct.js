@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View, Image, StyleSheet, Text } from 'react-native';
+import {View, Image, StyleSheet, Text} from 'react-native';
 const styles = StyleSheet.create({
-  proCard: {
+  proCardBot: {
     margin: 10,
     width: 160,
     height: 250,
@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   proImg: {
-    width: 120,
-    height: 150,
+    width: 130,
+    height: 160,
     resizeMode: 'cover',
     padding: 10,
   },
@@ -26,23 +26,22 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
   },
 });
-const TopProduct = () => {
+const BotProduct = () => {
   return (
-      <View style={styles.proCard}>
-        <View style={styles.containProImg}>
-          <Image
+    <View style={styles.proCardBot}>
+      <View style={styles.containProImg}>
+        <Image
           source={{
-            uri: 'https://www.zoomnews.in/uploads_2019/newses/ajb_132753060_sm.webp',
+            uri: 'https://pharmafactz.com/wp-content/uploads/2020/07/difference-between-a-drug-and-a-medicine.jpg',
           }}
           style={styles.proImg}
         />
-        </View>
-
-        <View style={styles.text}>
-          <Text>Bánh mì bơ sữa, đặc biệt thơm ngon</Text>
-          <Text>$2 ngàn 3 ngàn 1 ổ</Text>
-        </View>
       </View>
+      <View style={styles.text}>
+        <Text>Bánh mì bơ sữa, đặc biệt thơm ngon</Text>
+        <Text>$2 ngàn 3 ngàn 1 ổ</Text>
+      </View>
+    </View>
   );
 };
-export default TopProduct;
+export default BotProduct;
